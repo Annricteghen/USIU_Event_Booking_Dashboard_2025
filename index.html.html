@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USIU-A Event Booking Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <img src="logo-placeholder.png" alt="USIU-A Logo" class="logo">
+        <h1>Event Booking Dashboard</h1>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- Event List Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Event Name</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                    <th>Slots Available</th>
+                    <th>Register</th>
+                </tr>
+            </thead>
+            <tbody id="eventTable"></tbody>
+        </table>
+
+        <!-- Registration Form -->
+        <form id="bookingForm">
+            <h2>Register for an Event</h2>
+            <label>Name:</label>
+            <input type="text" id="name" required>
+            <label>Student ID:</label>
+            <input type="text" id="studentId" required>
+            <label>Event:</label>
+            <select id="eventSelect"></select>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Confirmation Message -->
+        <div id="confirmation"></div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 USIU-A. All Rights Reserved.</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a>
+    </footer>
+</body>
+</html>
